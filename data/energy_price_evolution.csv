@@ -1,0 +1,481 @@
+﻿region,year,energie_type,value
+western europe,2021,Gasoline,1
+western europe,2022,Gasoline,1
+western europe,2023,Gasoline,1
+western europe,2024,Gasoline,1
+western europe,2025,Gasoline,1
+western europe,2026,Gasoline,1
+western europe,2027,Gasoline,1
+western europe,2028,Gasoline,1
+western europe,2029,Gasoline,1
+western europe,2030,Gasoline,1
+western europe,2031,Gasoline,1
+western europe,2032,Gasoline,1
+western europe,2033,Gasoline,1
+western europe,2034,Gasoline,1
+western europe,2035,Gasoline,1
+western europe,2036,Gasoline,1
+western europe,2037,Gasoline,1
+western europe,2038,Gasoline,1
+western europe,2039,Gasoline,1
+western europe,2040,Gasoline,1
+western europe,2021,Diesel,2.8
+western europe,2022,Diesel,2.8
+western europe,2023,Diesel,2.8
+western europe,2024,Diesel,2.8
+western europe,2025,Diesel,2.8
+western europe,2026,Diesel,2.8
+western europe,2027,Diesel,2.8
+western europe,2028,Diesel,2.8
+western europe,2029,Diesel,2.8
+western europe,2030,Diesel,2.8
+western europe,2031,Diesel,1.4
+western europe,2032,Diesel,1.4
+western europe,2033,Diesel,1.4
+western europe,2034,Diesel,1.4
+western europe,2035,Diesel,1.4
+western europe,2036,Diesel,1.4
+western europe,2037,Diesel,1.4
+western europe,2038,Diesel,1.4
+western europe,2039,Diesel,1.4
+western europe,2040,Diesel,1.4
+western europe,2021,CNG,1
+western europe,2022,CNG,1
+western europe,2023,CNG,1
+western europe,2024,CNG,1
+western europe,2025,CNG,1
+western europe,2026,CNG,1
+western europe,2027,CNG,1
+western europe,2028,CNG,1
+western europe,2029,CNG,1
+western europe,2030,CNG,1
+western europe,2031,CNG,1
+western europe,2032,CNG,1
+western europe,2033,CNG,1
+western europe,2034,CNG,1
+western europe,2035,CNG,1
+western europe,2036,CNG,1
+western europe,2037,CNG,1
+western europe,2038,CNG,1
+western europe,2039,CNG,1
+western europe,2040,CNG,1
+western europe,2021,Electricity,2
+western europe,2022,Electricity,2
+western europe,2023,Electricity,2
+western europe,2024,Electricity,2
+western europe,2025,Electricity,2
+western europe,2026,Electricity,2
+western europe,2027,Electricity,2
+western europe,2028,Electricity,2
+western europe,2029,Electricity,2
+western europe,2030,Electricity,2
+western europe,2031,Electricity,2
+western europe,2032,Electricity,2
+western europe,2033,Electricity,2
+western europe,2034,Electricity,2
+western europe,2035,Electricity,2
+western europe,2036,Electricity,2
+western europe,2037,Electricity,2
+western europe,2038,Electricity,2
+western europe,2039,Electricity,2
+western europe,2040,Electricity,2
+western europe,2021,Hydrogen,-4
+western europe,2022,Hydrogen,-4
+western europe,2023,Hydrogen,-4
+western europe,2024,Hydrogen,-4
+western europe,2025,Hydrogen,-4
+western europe,2026,Hydrogen,-4
+western europe,2027,Hydrogen,-4
+western europe,2028,Hydrogen,-4
+western europe,2029,Hydrogen,-4
+western europe,2030,Hydrogen,-4
+western europe,2031,Hydrogen,-2
+western europe,2032,Hydrogen,-2
+western europe,2033,Hydrogen,-2
+western europe,2034,Hydrogen,-2
+western europe,2035,Hydrogen,-2
+western europe,2036,Hydrogen,-2
+western europe,2037,Hydrogen,-2
+western europe,2038,Hydrogen,-2
+western europe,2039,Hydrogen,-2
+western europe,2040,Hydrogen,-2
+china,2021,Gasoline,1
+china,2022,Gasoline,1
+china,2023,Gasoline,1
+china,2024,Gasoline,1
+china,2025,Gasoline,1
+china,2026,Gasoline,1
+china,2027,Gasoline,1
+china,2028,Gasoline,1
+china,2029,Gasoline,1
+china,2030,Gasoline,1
+china,2031,Gasoline,1
+china,2032,Gasoline,1
+china,2033,Gasoline,1
+china,2034,Gasoline,1
+china,2035,Gasoline,1
+china,2036,Gasoline,1
+china,2037,Gasoline,1
+china,2038,Gasoline,1
+china,2039,Gasoline,1
+china,2040,Gasoline,1
+china,2021,Diesel,2.8
+china,2022,Diesel,2.8
+china,2023,Diesel,2.8
+china,2024,Diesel,2.8
+china,2025,Diesel,2.8
+china,2026,Diesel,2.8
+china,2027,Diesel,2.8
+china,2028,Diesel,2.8
+china,2029,Diesel,2.8
+china,2030,Diesel,2.8
+china,2031,Diesel,2.8
+china,2032,Diesel,2.8
+china,2033,Diesel,2.8
+china,2034,Diesel,2.8
+china,2035,Diesel,2.8
+china,2036,Diesel,2.8
+china,2037,Diesel,2.8
+china,2038,Diesel,2.8
+china,2039,Diesel,2.8
+china,2040,Diesel,2.8
+china,2021,CNG,1
+china,2022,CNG,1
+china,2023,CNG,1
+china,2024,CNG,1
+china,2025,CNG,1
+china,2026,CNG,1
+china,2027,CNG,1
+china,2028,CNG,1
+china,2029,CNG,1
+china,2030,CNG,1
+china,2031,CNG,1
+china,2032,CNG,1
+china,2033,CNG,1
+china,2034,CNG,1
+china,2035,CNG,1
+china,2036,CNG,1
+china,2037,CNG,1
+china,2038,CNG,1
+china,2039,CNG,1
+china,2040,CNG,1
+china,2021,Electricity,2
+china,2022,Electricity,2
+china,2023,Electricity,2
+china,2024,Electricity,2
+china,2025,Electricity,2
+china,2026,Electricity,2
+china,2027,Electricity,2
+china,2028,Electricity,2
+china,2029,Electricity,2
+china,2030,Electricity,2
+china,2031,Electricity,2
+china,2032,Electricity,2
+china,2033,Electricity,2
+china,2034,Electricity,2
+china,2035,Electricity,2
+china,2036,Electricity,2
+china,2037,Electricity,2
+china,2038,Electricity,2
+china,2039,Electricity,2
+china,2040,Electricity,2
+china,2021,Hydrogen,-4
+china,2022,Hydrogen,-4
+china,2023,Hydrogen,-4
+china,2024,Hydrogen,-4
+china,2025,Hydrogen,-4
+china,2026,Hydrogen,-4
+china,2027,Hydrogen,-4
+china,2028,Hydrogen,-4
+china,2029,Hydrogen,-4
+china,2030,Hydrogen,-4
+china,2031,Hydrogen,-4
+china,2032,Hydrogen,-4
+china,2033,Hydrogen,-4
+china,2034,Hydrogen,-4
+china,2035,Hydrogen,-4
+china,2036,Hydrogen,-4
+china,2037,Hydrogen,-4
+china,2038,Hydrogen,-4
+china,2039,Hydrogen,-4
+china,2040,Hydrogen,-4
+north america,2021,Gasoline,1
+north america,2022,Gasoline,1
+north america,2023,Gasoline,1
+north america,2024,Gasoline,1
+north america,2025,Gasoline,1
+north america,2026,Gasoline,1
+north america,2027,Gasoline,1
+north america,2028,Gasoline,1
+north america,2029,Gasoline,1
+north america,2030,Gasoline,1
+north america,2031,Gasoline,1
+north america,2032,Gasoline,1
+north america,2033,Gasoline,1
+north america,2034,Gasoline,1
+north america,2035,Gasoline,1
+north america,2036,Gasoline,1
+north america,2037,Gasoline,1
+north america,2038,Gasoline,1
+north america,2039,Gasoline,1
+north america,2040,Gasoline,1
+north america,2021,Diesel,2.8
+north america,2022,Diesel,2.8
+north america,2023,Diesel,2.8
+north america,2024,Diesel,2.8
+north america,2025,Diesel,2.8
+north america,2026,Diesel,2.8
+north america,2027,Diesel,2.8
+north america,2028,Diesel,2.8
+north america,2029,Diesel,2.8
+north america,2030,Diesel,2.8
+north america,2031,Diesel,2.8
+north america,2032,Diesel,2.8
+north america,2033,Diesel,2.8
+north america,2034,Diesel,2.8
+north america,2035,Diesel,2.8
+north america,2036,Diesel,2.8
+north america,2037,Diesel,2.8
+north america,2038,Diesel,2.8
+north america,2039,Diesel,2.8
+north america,2040,Diesel,2.8
+north america,2021,CNG,1
+north america,2022,CNG,1
+north america,2023,CNG,1
+north america,2024,CNG,1
+north america,2025,CNG,1
+north america,2026,CNG,1
+north america,2027,CNG,1
+north america,2028,CNG,1
+north america,2029,CNG,1
+north america,2030,CNG,1
+north america,2031,CNG,1
+north america,2032,CNG,1
+north america,2033,CNG,1
+north america,2034,CNG,1
+north america,2035,CNG,1
+north america,2036,CNG,1
+north america,2037,CNG,1
+north america,2038,CNG,1
+north america,2039,CNG,1
+north america,2040,CNG,1
+north america,2021,Electricity,2
+north america,2022,Electricity,2
+north america,2023,Electricity,2
+north america,2024,Electricity,2
+north america,2025,Electricity,2
+north america,2026,Electricity,2
+north america,2027,Electricity,2
+north america,2028,Electricity,2
+north america,2029,Electricity,2
+north america,2030,Electricity,2
+north america,2031,Electricity,2
+north america,2032,Electricity,2
+north america,2033,Electricity,2
+north america,2034,Electricity,2
+north america,2035,Electricity,2
+north america,2036,Electricity,2
+north america,2037,Electricity,2
+north america,2038,Electricity,2
+north america,2039,Electricity,2
+north america,2040,Electricity,2
+north america,2021,Hydrogen,-4
+north america,2022,Hydrogen,-4
+north america,2023,Hydrogen,-4
+north america,2024,Hydrogen,-4
+north america,2025,Hydrogen,-4
+north america,2026,Hydrogen,-4
+north america,2027,Hydrogen,-4
+north america,2028,Hydrogen,-4
+north america,2029,Hydrogen,-4
+north america,2030,Hydrogen,-4
+north america,2031,Hydrogen,-4
+north america,2032,Hydrogen,-4
+north america,2033,Hydrogen,-4
+north america,2034,Hydrogen,-4
+north america,2035,Hydrogen,-4
+north america,2036,Hydrogen,-4
+north america,2037,Hydrogen,-4
+north america,2038,Hydrogen,-4
+north america,2039,Hydrogen,-4
+north america,2040,Hydrogen,-4
+rest of asia,2021,Gasoline,1
+rest of asia,2022,Gasoline,1
+rest of asia,2023,Gasoline,1
+rest of asia,2024,Gasoline,1
+rest of asia,2025,Gasoline,1
+rest of asia,2026,Gasoline,1
+rest of asia,2027,Gasoline,1
+rest of asia,2028,Gasoline,1
+rest of asia,2029,Gasoline,1
+rest of asia,2030,Gasoline,1
+rest of asia,2031,Gasoline,1
+rest of asia,2032,Gasoline,1
+rest of asia,2033,Gasoline,1
+rest of asia,2034,Gasoline,1
+rest of asia,2035,Gasoline,1
+rest of asia,2036,Gasoline,1
+rest of asia,2037,Gasoline,1
+rest of asia,2038,Gasoline,1
+rest of asia,2039,Gasoline,1
+rest of asia,2040,Gasoline,1
+rest of asia,2021,Diesel,2.8
+rest of asia,2022,Diesel,2.8
+rest of asia,2023,Diesel,2.8
+rest of asia,2024,Diesel,2.8
+rest of asia,2025,Diesel,2.8
+rest of asia,2026,Diesel,2.8
+rest of asia,2027,Diesel,2.8
+rest of asia,2028,Diesel,2.8
+rest of asia,2029,Diesel,2.8
+rest of asia,2030,Diesel,2.8
+rest of asia,2031,Diesel,2.8
+rest of asia,2032,Diesel,2.8
+rest of asia,2033,Diesel,2.8
+rest of asia,2034,Diesel,2.8
+rest of asia,2035,Diesel,2.8
+rest of asia,2036,Diesel,2.8
+rest of asia,2037,Diesel,2.8
+rest of asia,2038,Diesel,2.8
+rest of asia,2039,Diesel,2.8
+rest of asia,2040,Diesel,2.8
+rest of asia,2021,CNG,1
+rest of asia,2022,CNG,1
+rest of asia,2023,CNG,1
+rest of asia,2024,CNG,1
+rest of asia,2025,CNG,1
+rest of asia,2026,CNG,1
+rest of asia,2027,CNG,1
+rest of asia,2028,CNG,1
+rest of asia,2029,CNG,1
+rest of asia,2030,CNG,1
+rest of asia,2031,CNG,1
+rest of asia,2032,CNG,1
+rest of asia,2033,CNG,1
+rest of asia,2034,CNG,1
+rest of asia,2035,CNG,1
+rest of asia,2036,CNG,1
+rest of asia,2037,CNG,1
+rest of asia,2038,CNG,1
+rest of asia,2039,CNG,1
+rest of asia,2040,CNG,1
+rest of asia,2021,Electricity,2
+rest of asia,2022,Electricity,2
+rest of asia,2023,Electricity,2
+rest of asia,2024,Electricity,2
+rest of asia,2025,Electricity,2
+rest of asia,2026,Electricity,2
+rest of asia,2027,Electricity,2
+rest of asia,2028,Electricity,2
+rest of asia,2029,Electricity,2
+rest of asia,2030,Electricity,2
+rest of asia,2031,Electricity,2
+rest of asia,2032,Electricity,2
+rest of asia,2033,Electricity,2
+rest of asia,2034,Electricity,2
+rest of asia,2035,Electricity,2
+rest of asia,2036,Electricity,2
+rest of asia,2037,Electricity,2
+rest of asia,2038,Electricity,2
+rest of asia,2039,Electricity,2
+rest of asia,2040,Electricity,2
+rest of asia,2021,Hydrogen,-4
+rest of asia,2022,Hydrogen,-4
+rest of asia,2023,Hydrogen,-4
+rest of asia,2024,Hydrogen,-4
+rest of asia,2025,Hydrogen,-4
+rest of asia,2026,Hydrogen,-4
+rest of asia,2027,Hydrogen,-4
+rest of asia,2028,Hydrogen,-4
+rest of asia,2029,Hydrogen,-4
+rest of asia,2030,Hydrogen,-4
+rest of asia,2031,Hydrogen,-4
+rest of asia,2032,Hydrogen,-4
+rest of asia,2033,Hydrogen,-4
+rest of asia,2034,Hydrogen,-4
+rest of asia,2035,Hydrogen,-4
+rest of asia,2036,Hydrogen,-4
+rest of asia,2037,Hydrogen,-4
+rest of asia,2038,Hydrogen,-4
+rest of asia,2039,Hydrogen,-4
+rest of asia,2040,Hydrogen,-4
+western europe,2021,Adblue,2
+western europe,2022,Adblue,2
+western europe,2023,Adblue,2
+western europe,2024,Adblue,2
+western europe,2025,Adblue,2
+western europe,2026,Adblue,2
+western europe,2027,Adblue,2
+western europe,2028,Adblue,2
+western europe,2029,Adblue,2
+western europe,2030,Adblue,2
+western europe,2031,Adblue,2
+western europe,2032,Adblue,2
+western europe,2033,Adblue,2
+western europe,2034,Adblue,2
+western europe,2035,Adblue,2
+western europe,2036,Adblue,2
+western europe,2037,Adblue,2
+western europe,2038,Adblue,2
+western europe,2039,Adblue,2
+western europe,2040,Adblue,2
+rest of asia,2021,Adblue,2
+rest of asia,2022,Adblue,2
+rest of asia,2023,Adblue,2
+rest of asia,2024,Adblue,2
+rest of asia,2025,Adblue,2
+rest of asia,2026,Adblue,2
+rest of asia,2027,Adblue,2
+rest of asia,2028,Adblue,2
+rest of asia,2029,Adblue,2
+rest of asia,2030,Adblue,2
+rest of asia,2031,Adblue,2
+rest of asia,2032,Adblue,2
+rest of asia,2033,Adblue,2
+rest of asia,2034,Adblue,2
+rest of asia,2035,Adblue,2
+rest of asia,2036,Adblue,2
+rest of asia,2037,Adblue,2
+rest of asia,2038,Adblue,2
+rest of asia,2039,Adblue,2
+rest of asia,2040,Adblue,2
+north america,2021,Adblue,2
+north america,2022,Adblue,2
+north america,2023,Adblue,2
+north america,2024,Adblue,2
+north america,2025,Adblue,2
+north america,2026,Adblue,2
+north america,2027,Adblue,2
+north america,2028,Adblue,2
+north america,2029,Adblue,2
+north america,2030,Adblue,2
+north america,2031,Adblue,2
+north america,2032,Adblue,2
+north america,2033,Adblue,2
+north america,2034,Adblue,2
+north america,2035,Adblue,2
+north america,2036,Adblue,2
+north america,2037,Adblue,2
+north america,2038,Adblue,2
+north america,2039,Adblue,2
+north america,2040,Adblue,2
+china,2021,Adblue,2
+china,2022,Adblue,2
+china,2023,Adblue,2
+china,2024,Adblue,2
+china,2025,Adblue,2
+china,2026,Adblue,2
+china,2027,Adblue,2
+china,2028,Adblue,2
+china,2029,Adblue,2
+china,2030,Adblue,2
+china,2031,Adblue,2
+china,2032,Adblue,2
+china,2033,Adblue,2
+china,2034,Adblue,2
+china,2035,Adblue,2
+china,2036,Adblue,2
+china,2037,Adblue,2
+china,2038,Adblue,2
+china,2039,Adblue,2
+china,2040,Adblue,2
