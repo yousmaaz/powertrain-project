@@ -1,11 +1,13 @@
 #streamlit
+
+
 import streamlit as st
 import pandas as pd
 
 import pandas as pd
 import numpy as np
 from functools import reduce
-from fuel_cost import calculate_fuel_cost, calculate_elec_price
+from src.fuel_cost import calculate_fuel_cost, calculate_elec_price
 
 
 def generate_form():
