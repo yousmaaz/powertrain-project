@@ -10,9 +10,6 @@ from functools import reduce
 from src.fuel_cost import calculate_fuel_cost, calculate_elec_price
 
 
-import streamlit as st
-import pandas as pd
-from fuel_cost import calculate_fuel_cost, calculate_elec_price
 
 
 def generate_form():
