@@ -84,8 +84,8 @@ input_fuel_cost = generate_form()
 if st.sidebar.button("Calculate Fuel Price"):
     st.write("Fuel Price Data")
     fuel_price = calculate_fuel_cost(input_fuel_cost, euro_seven, eng_price_evol)
-    #s = calculate_elec_price(input_fuel_cost, eng_price_evol, year_calcul=2021)
-    st.write("Fuel Price Data")
+    s = calculate_elec_price(input_fuel_cost, eng_price_evol, year_calcul=2021)
+    #st.write("Fuel Price Data")
     st.dataframe(fuel_price)
     #st.dataframe(fuel_price)
 
