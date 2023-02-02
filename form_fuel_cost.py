@@ -15,7 +15,7 @@ from src.fuel_cost import calculate_fuel_cost, calculate_elec_price
 def generate_form():
 
     powertrain_type = st.sidebar.selectbox("Powertrain Type", ["ICE G", "ICE D", "CNG", "HEV", "PHEV", "BEV", "FCEV"])
-    region = st.sidebar.selectbox("Region", ["Western Europe", "Eastern Europe", "North America", "Asia"])
+    region = st.sidebar.selectbox("Region", ["western europe", "Eastern Europe", "North America", "Asia"])
 
     if st.sidebar.checkbox("Indicator Fuel Type"):
         fuel_type = st.sidebar.selectbox("Fuel Type", ["Gasoline", "Diesel", "CNG", "LPG"])
