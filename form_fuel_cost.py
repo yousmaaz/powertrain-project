@@ -14,15 +14,15 @@ from src.fuel_cost import calculate_fuel_cost, calculate_elec_price
 
 def generate_form():
 
-    powertrain_type = st.sidebar.selectbox("Powertrain Type", ["FCEV", "BEV", "ICEV", "PHEV"])
-    region = st.sidebar.selectbox("Region", ["western europe", "eastern europe", "north america", "asia"])
+    powertrain_type = st.sidebar.selectbox("Powertrain Type", ["ICE G", "ICE D", "CNG", "HEV", "PHEV", "BEV", "FCEV"])
+    region = st.sidebar.selectbox("Region", ["Western Europe", "Eastern Europe", "North America", "Asia"])
 
     if st.sidebar.checkbox("Indicator Fuel Type"):
         fuel_type = st.sidebar.selectbox("Fuel Type", ["Gasoline", "Diesel", "CNG", "LPG"])
         fuel_price = st.sidebar.number_input("Fuel Price (in $)", value=0.0, step=0.1)
         fuel_consumption = st.sidebar.number_input("Fuel Consumption (in L/100km)", value=0.0, step=0.1)
         indicator_euro_seven_impact_fuel = st.sidebar.checkbox("Indicator Euro Seven Impact Fuel")
-
+        
     else:
         fuel_type = None
         fuel_price = None
@@ -84,7 +84,7 @@ input_fuel_cost = generate_form()
 if st.sidebar.button("Calculate Fuel Price"):
     st.write("Fuel Price Data")
     fuel_price = calculate_fuel_cost(input_fuel_cost, euro_seven, eng_price_evol)
-    s = calculate_elec_price(input_fuel_cost, eng_price_evol, year_calcul=2021)
+    #s = calculate_elec_price(input_fuel_cost, eng_price_evol, year_calcul=2021)
     st.write("Fuel Price Data")
     st.dataframe(fuel_price)
     #st.dataframe(fuel_price)
