@@ -3,194 +3,196 @@ import numpy as np
 from functools import reduce
 import numpy_financial as npf
 
-input_veh_price = [
+#input_veh_price = [
+#
+# {
+#    "powertrain_type": "ICE-G",
+#    "region": "western europe",
+#    "fuel_type": "Gasoline",
+#    "base_vehicle":20000,
+#    "driveline": 6800,
+#    "storage_cng" : None,
+#    "indicator_euro_impact_veh_cost":True,
+#    "storage_capicity": None,
+#    "storage_cost": None,
+#    "battery_capacity": None,
+#    "battery_cost": None,
+#    "indicator_fuel_cell": False,
+#    "fuel_cell_capcity": None,
+#    "fuel_cell_cost": None,
+#    "electronics_units":None,
+#    "charging_point":None,
+#    "indicator_subsidies": False,
+#    "subsidies_rate": None,
+#    "subsidies_year": None,
+#    "financial_rate":2,
+#    "residual_rate": 30,
+#    "year_amortization": 5
+#
+#
+# },
+#{
+#    "powertrain_type": "ICE-D",
+#    "region": "western europe",
+#    "fuel_type": "Diesel",
+#    "base_vehicle": 20000,
+#    "driveline": 8800,
+#    "storage_cng" : None,
+#    "indicator_euro_impact_veh_cost": True,
+#    "storage_capicity": None,
+#    "storage_cost": None,
+#    "battery_capacity": None,
+#    "battery_cost": None,
+#    "indicator_fuel_cell": False,
+#    "fuel_cell_capcity": None,
+#    "fuel_cell_cost": None,
+#    "electronics_units": None,
+#    "charging_point": None,
+#    "indicator_subsidies": False,
+#    "subsidies_rate": None,
+#    "subsidies_year": None,
+#    "financial_rate": 2,
+#    "residual_rate": 30,
+#    "year_amortization": 5
+#},
+#
+#    {
+#    "powertrain_type": "CNG",
+#    "region": "western europe",
+#    "fuel_type": "CNG",
+#    "base_vehicle": 20000,
+#    "driveline": 6800,
+#    "storage_cng": 1917,
+#    "indicator_euro_impact_veh_cost": False,
+#    "storage_capicity": None,
+#    "storage_cost": None,
+#    "battery_capacity": None,
+#    "battery_cost": None,
+#    "indicator_fuel_cell": False,
+#    "fuel_cell_capcity": None,
+#    "fuel_cell_cost": None,
+#    "electronics_units": None,
+#    "charging_point": None,
+#    "indicator_subsidies": False,
+#    "subsidies_rate": None,
+#    "subsidies_year": None,
+#    "financial_rate": 2,
+#    "residual_rate": 25,
+#    "year_amortization": 5
+#    },
+#
+#    {
+#        "powertrain_type": "HEV",
+#        "region": "western europe",
+#        "fuel_type": "HEV",
+#        "base_vehicle": 20000,
+#        "driveline": 8300,
+#        "storage_cng" : None,
+#        "indicator_euro_impact_veh_cost": True,
+#        "storage_capicity": None,
+#        "storage_cost": None,
+#        "battery_capacity": 2,
+#        "battery_cost": 220,
+#        "indicator_fuel_cell": False,
+#        "fuel_cell_capcity": None,
+#        "fuel_cell_cost": None,
+#        "electronics_units": 20,
+#        "charging_point": None,
+#        "indicator_subsidies": False,
+#        "subsidies_rate": None,
+#        "subsidies_year": None,
+#        "financial_rate": 2,
+#        "residual_rate": 30,
+#        "year_amortization": 5
+#    },
+#
+#    {
+#        "powertrain_type": "PHEV",
+#        "region": "western europe",
+#        "fuel_type": "PHEV",
+#        "base_vehicle": 20000,
+#        "driveline": 10800,
+#        "storage_cng" : None,
+#        "indicator_euro_impact_veh_cost": True,
+#        "storage_capicity": None,
+#        "storage_cost": None,
+#        "battery_capacity": 8,
+#        "battery_cost": 220,
+#        "indicator_fuel_cell": False,
+#        "fuel_cell_capcity": None,
+#        "fuel_cell_cost": None,
+#        "electronics_units": 80,
+#        "charging_point": 1500,
+#        "indicator_subsidies": True,
+#        "subsidies_rate": 0.5,
+#        "subsidies_year": 6,
+#        "financial_rate": 2,
+#        "residual_rate": 30,
+#        "year_amortization": 5
+#    },
+#
+#    {
+#        "powertrain_type": "BEV",
+#        "region": "western europe",
+#        "fuel_type": None,
+#        "base_vehicle": 20000,
+#        "driveline": 7500,
+#        "storage_cng" : None,
+#        "indicator_euro_impact_veh_cost": False,
+#        "storage_capicity": None,
+#        "storage_cost": None,
+#        "battery_capacity": 55,
+#        "battery_cost": 220,
+#        "indicator_fuel_cell": False,
+#        "fuel_cell_capcity": None,
+#        "fuel_cell_cost": None,
+#        "electronics_units": 80,
+#        "charging_point": 1500,
+#        "indicator_subsidies": True,
+#        "subsidies_rate": 0.75,
+#        "subsidies_year": 6,
+#        "financial_rate": 2,
+#        "residual_rate": 42,
+#        "year_amortization": 5
+#    },
+#
+#    {
+#        "powertrain_type": "FCEV",
+#        "region": "western europe",
+#        "fuel_type": None,
+#        "base_vehicle": 20000,
+#        "driveline": 3500,
+#        "storage_cng" : None,
+#        "indicator_euro_impact_veh_cost": False,
+#        "storage_capicity": 6,
+#        "storage_cost": 500,
+#        "battery_capacity": 8,
+#        "battery_cost": 220,
+#        "indicator_fuel_cell": True,
+#        "fuel_cell_capcity": 75,
+#        "fuel_cell_cost": 300,
+#        "electronics_units": 80,
+#        "charging_point": None,
+#        "indicator_subsidies": True,
+#        "subsidies_rate": 1,
+#        "subsidies_year": 9,
+#        "financial_rate": 2,
+#        "residual_rate": 40,
+#        "year_amortization": 5
+#    }
+#
+#]
+#
+#from collections import defaultdict
+#my_dict = defaultdict(list)
+#
+#for dic in input_veh_price:
+#    for key, value in dic.items():
+#        my_dict[key].append(value)
+#
+#df_input_veh_price=pd.DataFrame(my_dict)
 
- {
-    "powertrain_type": "ICE-G",
-    "region": "western europe",
-    "fuel_type": "Gasoline",
-    "base_vehicle":20000,
-    "driveline": 6800,
-    "storage_cng" : None,
-    "indicator_euro_impact_veh_cost":True,
-    "storage_capicity": None,
-    "storage_cost": None,
-    "battery_capacity": None,
-    "battery_cost": None,
-    "indicator_fuel_cell": False,
-    "fuel_cell_capcity": None,
-    "fuel_cell_cost": None,
-    "electronics_units":None,
-    "charging_point":None,
-    "indicator_subsidies": False,
-    "subsidies_rate": None,
-    "subsidies_year": None,
-    "financial_rate":2,
-    "residual_rate": 30,
-    "year_amortization": 5
-
-
- },
-{
-    "powertrain_type": "ICE-D",
-    "region": "western europe",
-    "fuel_type": "Diesel",
-    "base_vehicle": 20000,
-    "driveline": 8800,
-    "storage_cng" : None,
-    "indicator_euro_impact_veh_cost": True,
-    "storage_capicity": None,
-    "storage_cost": None,
-    "battery_capacity": None,
-    "battery_cost": None,
-    "indicator_fuel_cell": False,
-    "fuel_cell_capcity": None,
-    "fuel_cell_cost": None,
-    "electronics_units": None,
-    "charging_point": None,
-    "indicator_subsidies": False,
-    "subsidies_rate": None,
-    "subsidies_year": None,
-    "financial_rate": 2,
-    "residual_rate": 30,
-    "year_amortization": 5
-},
-
-    {
-    "powertrain_type": "CNG",
-    "region": "western europe",
-    "fuel_type": "CNG",
-    "base_vehicle": 20000,
-    "driveline": 6800,
-    "storage_cng": 1917,
-    "indicator_euro_impact_veh_cost": False,
-    "storage_capicity": None,
-    "storage_cost": None,
-    "battery_capacity": None,
-    "battery_cost": None,
-    "indicator_fuel_cell": False,
-    "fuel_cell_capcity": None,
-    "fuel_cell_cost": None,
-    "electronics_units": None,
-    "charging_point": None,
-    "indicator_subsidies": False,
-    "subsidies_rate": None,
-    "subsidies_year": None,
-    "financial_rate": 2,
-    "residual_rate": 25,
-    "year_amortization": 5
-    },
-
-    {
-        "powertrain_type": "HEV",
-        "region": "western europe",
-        "fuel_type": "HEV",
-        "base_vehicle": 20000,
-        "driveline": 8300,
-        "storage_cng" : None,
-        "indicator_euro_impact_veh_cost": True,
-        "storage_capicity": None,
-        "storage_cost": None,
-        "battery_capacity": 2,
-        "battery_cost": 220,
-        "indicator_fuel_cell": False,
-        "fuel_cell_capcity": None,
-        "fuel_cell_cost": None,
-        "electronics_units": 20,
-        "charging_point": None,
-        "indicator_subsidies": False,
-        "subsidies_rate": None,
-        "subsidies_year": None,
-        "financial_rate": 2,
-        "residual_rate": 30,
-        "year_amortization": 5
-    },
-
-    {
-        "powertrain_type": "PHEV",
-        "region": "western europe",
-        "fuel_type": "PHEV",
-        "base_vehicle": 20000,
-        "driveline": 10800,
-        "storage_cng" : None,
-        "indicator_euro_impact_veh_cost": True,
-        "storage_capicity": None,
-        "storage_cost": None,
-        "battery_capacity": 8,
-        "battery_cost": 220,
-        "indicator_fuel_cell": False,
-        "fuel_cell_capcity": None,
-        "fuel_cell_cost": None,
-        "electronics_units": 80,
-        "charging_point": 1500,
-        "indicator_subsidies": True,
-        "subsidies_rate": 0.5,
-        "subsidies_year": 6,
-        "financial_rate": 2,
-        "residual_rate": 30,
-        "year_amortization": 5
-    },
-
-    {
-        "powertrain_type": "BEV",
-        "region": "western europe",
-        "fuel_type": None,
-        "base_vehicle": 20000,
-        "driveline": 7500,
-        "storage_cng" : None,
-        "indicator_euro_impact_veh_cost": False,
-        "storage_capicity": None,
-        "storage_cost": None,
-        "battery_capacity": 55,
-        "battery_cost": 220,
-        "indicator_fuel_cell": False,
-        "fuel_cell_capcity": None,
-        "fuel_cell_cost": None,
-        "electronics_units": 80,
-        "charging_point": 1500,
-        "indicator_subsidies": True,
-        "subsidies_rate": 0.75,
-        "subsidies_year": 6,
-        "financial_rate": 2,
-        "residual_rate": 42,
-        "year_amortization": 5
-    },
-
-    {
-        "powertrain_type": "FCEV",
-        "region": "western europe",
-        "fuel_type": None,
-        "base_vehicle": 20000,
-        "driveline": 3500,
-        "storage_cng" : None,
-        "indicator_euro_impact_veh_cost": False,
-        "storage_capicity": 6,
-        "storage_cost": 500,
-        "battery_capacity": 8,
-        "battery_cost": 220,
-        "indicator_fuel_cell": True,
-        "fuel_cell_capcity": 75,
-        "fuel_cell_cost": 300,
-        "electronics_units": 80,
-        "charging_point": None,
-        "indicator_subsidies": True,
-        "subsidies_rate": 1,
-        "subsidies_year": 9,
-        "financial_rate": 2,
-        "residual_rate": 40,
-        "year_amortization": 5
-    }
-
-]
-
-from collections import defaultdict
-my_dict = defaultdict(list)
-
-for dic in input_veh_price:
-    for key, value in dic.items():
-        my_dict[key].append(value)
-
-df_input_veh_price=pd.DataFrame(my_dict)
+#df_input_veh_price = pd.read_csv("data/input_veh_price.csv")
 
 def get_euro_seven_impact(input_veh_price, euro_seven_input):
     # TODO Check if fuel_type exists before filtering
@@ -309,12 +311,12 @@ def calculate_subsidies(input_veh_price, subsidies, year_calcul=2021):
 
 
 
-
-euro_seven = pd.read_csv("data/euro_seven_impact.csv")
-
-other_data=pd.read_csv("data/other_data.csv")
-
-subsidies_data = pd.read_csv("data/subsidies_data.csv")
+#
+#euro_seven = pd.read_csv("data/euro_seven_impact.csv")
+#
+#other_data=pd.read_csv("data/other_data.csv")
+#
+#subsidies_data = pd.read_csv("data/subsidies_data.csv")
 
 
 
@@ -414,18 +416,18 @@ def calculate_veh_cost(input_veh_price, veh_price_df):
 
 
 
-df_ = pd.DataFrame()
-lDf = []
-
-for i in range(7):
-    df = veh_price_claculation(input_veh_price[i], euro_seven, other_data, subsidies_data)
-    df_ = calculate_veh_cost(input_veh_price[i], df)
-    df_['powertrain_type'] = input_veh_price[i]['powertrain_type']
-    df_['region'] = input_veh_price[i]['region']
-    lDf.append(df_)
-
-dfs = pd.concat(lDf)
-dfs.to_csv("data/output/veh_cost_output.csv", index=False)
+#df_ = pd.DataFrame()
+#lDf = []
+#
+#for i in range(7):
+#    df = veh_price_claculation(input_veh_price[i], euro_seven, other_data, subsidies_data)
+#    df_ = calculate_veh_cost(input_veh_price[i], df)
+#    df_['powertrain_type'] = input_veh_price[i]['powertrain_type']
+#    df_['region'] = input_veh_price[i]['region']
+#    lDf.append(df_)
+#
+#dfs = pd.concat(lDf)
+#dfs.to_csv("data/output/veh_cost_output.csv", index=False)
 
 
 
