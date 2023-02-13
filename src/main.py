@@ -33,32 +33,32 @@ if __name__ == '__main__':
   euro_seven, eng_price_evol, other_data, subsidies_data, ihs, quartiles = load_assmption_data()
   
   file_fuel = st.sidebar.file_uploader("upload fuel cost input file", type={"csv"})
-  if file_fuel is not None:
-      input_fuel_df = pd.read_csv(file_fuel)
-  else:
-      st.success("Need fuel cost input file to run application ")
-      
-  
   veh_price_file = st.sidebar.file_uploader("upload veh price input file", type={"csv"})
-  if file_fuel is not None:
-      input_veh_price = pd.read_csv(veh_price_file)
-  else:
-      st.success("Need veh price input file to run application ")
-      
   rate_input_file = st.sidebar.file_uploader("upload rate input file", type={"csv"})
-  if file_fuel is not None:
+  
+  if (file_fuel is not None) & (veh_price_file is not None) & (rate_input_file is not None):
+      input_fuel_df = pd.read_csv(file_fuel)
+      
+      input_veh_price = pd.read_csv(veh_price_file)
+      
       input_rate = pd.read_csv(rate_input_file)
+      
+      
+      filter_region = st.expander("Do you want to filter by regions ?")
+      with filter_region:
+        regions = st.sidebar.multiselect('Which region would you like to process on',
+                  input_fuel_df.region.unique())
+
   else:
-      st.success("Need rate input file to run application ")
+      st.success("Need input files to run application ")
+      
+
   
   
   year_start=st.sidebar.slider('What is your begin year of calcul', min_value=2023, max_value=2030, value=2023, step=1)
   year_end=st.sidebar.slider('What is your end year of calcul', min_value=2023, max_value=2030, value=2030, step=1)
   
-  regions = st.sidebar.multiselect(
-    'Which region would you like to process on',
-    input_fuel_df.region.unique())
-
+  
   
   
   if st.sidebar.button('run application'):
