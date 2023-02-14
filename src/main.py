@@ -7,7 +7,7 @@ from MS import *
 import plotly.express as px
 import plotly.graph_objects as go
 
-@st.cache(allow_output_mutation=True)
+
 def load_assmption_data():
     euro_seven     = pd.read_csv("data/euro_seven_impact.csv")
     eng_price_evol = pd.read_csv("data/energy_price_evolution.csv")
@@ -98,7 +98,7 @@ if __name__ == '__main__':
              csv,
             "file.csv",
             "text/csv",
-            key='download-csv'
+            key='download-csv-4'
         )
       
       fig = px.line(output_fuel_cost, x='year', y='fuel_cost', color='powertrain_type', facet_col="region", markers=True)
@@ -132,7 +132,7 @@ if __name__ == '__main__':
              csv,
             "file.csv",
             "text/csv",
-            key='download-csv'
+            key='download-csv-3'
         )
       
       fig = px.line(output_veh_cost, x='year', y='veh_cost', color='powertrain_type', facet_col="region", markers=True)
@@ -156,7 +156,7 @@ if __name__ == '__main__':
              csv,
             "file.csv",
             "text/csv",
-            key='download-csv'
+            key='download-csv-2'
         )
       fig = px.line(TCO, x='year', y='TCO_percent', color='powertrain_type',
                     facet_col="region", facet_row="quartile", markers=True)
@@ -188,7 +188,7 @@ if __name__ == '__main__':
              csv,
             "file.csv",
             "text/csv",
-            key='download-csv'
+            key='download-csv-0'
         )
       
       fig = px.line(tco_data, x='year', y='TCO_AVG_POWERTRAIN', color='powertrain_type',
@@ -223,7 +223,7 @@ if __name__ == '__main__':
              csv,
             "file.csv",
             "text/csv",
-            key='download-csv'
+            key='download-csv-1'
         )
         
       with col2:
