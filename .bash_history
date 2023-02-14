@@ -30,3 +30,6 @@ pip3 insttall streamlit
 pip3 install streamlit 
 streamlit run src/main.py
 streamlit run src/main.py
+streamlit src/main.py 
+streamlit run src/main.py 
+streamlit run src/main.py 
