@@ -17,6 +17,10 @@ def load_assmption_data():
     quartiles= pd.read_csv("data/population_quartile.csv")
     
     return euro_seven, eng_price_evol, other_data, subsidies_data, ihs, quartiles
+  
+@st.experimental_memo
+def convert_df(df):
+    return df.to_csv(index=False).encode('utf-8')
 
 if __name__ == '__main__':
 
@@ -80,9 +84,22 @@ if __name__ == '__main__':
 
       output_fuel_cost = pd.concat(lDf_bis)
       
+      
+
+
+      
+      
       show_data = st.expander("Show me data 👉")
       with show_data:
         st.dataframe(output_fuel_cost)
+        csv = convert_df(output_fuel_cost)
+        st.download_button(
+            "Press to Download",
+             csv,
+            "file.csv",
+            "text/csv",
+            key='download-csv'
+        )
       
       fig = px.line(output_fuel_cost, x='year', y='fuel_cost', color='powertrain_type', facet_col="region", markers=True)
       fig.update_layout(title_text="Evolution Fuel cost by powertrain",
@@ -109,6 +126,14 @@ if __name__ == '__main__':
       show_data = st.expander("Show me data 👉")
       with show_data:
         st.dataframe(output_veh_cost)
+        csv = convert_df(output_veh_cost)
+        st.download_button(
+            "Press to Download",
+             csv,
+            "file.csv",
+            "text/csv",
+            key='download-csv'
+        )
       
       fig = px.line(output_veh_cost, x='year', y='veh_cost', color='powertrain_type', facet_col="region", markers=True)
       fig.update_layout(title_text="Evolution Vehicle cost by powertrain",
@@ -124,7 +149,15 @@ if __name__ == '__main__':
       TCO = calculate_TCO(output_fuel_cost, output_veh_cost, input_rate, quartiles)
       show_data = st.expander("Show me data 👉")
       with show_data:
-        st.dataframe(TCO) 
+        st.dataframe(TCO)
+        csv = convert_df(TCO)
+        st.download_button(
+            "Press to Download",
+             csv,
+            "file.csv",
+            "text/csv",
+            key='download-csv'
+        )
       fig = px.line(TCO, x='year', y='TCO_percent', color='powertrain_type',
                     facet_col="region", facet_row="quartile", markers=True)
       fig.update_layout(title_text="Percentage Powertrain TCO by region and  quartile",
@@ -149,6 +182,14 @@ if __name__ == '__main__':
       show_data = st.expander("Show me data 👉")
       with show_data:
         st.dataframe(tco_data)
+        csv = convert_df(tco_data)
+        st.download_button(
+            "Press to Download",
+             csv,
+            "file.csv",
+            "text/csv",
+            key='download-csv'
+        )
       
       fig = px.line(tco_data, x='year', y='TCO_AVG_POWERTRAIN', color='powertrain_type',
                     facet_col="region", markers=True)
@@ -173,9 +214,18 @@ if __name__ == '__main__':
         tco_data_preview["actual_volume"] =np.where(tco_data_preview['year'] == year_start, tco_data_preview["base_volume"], tco_data_preview["base_volume"] + tco_data_preview["s3_ms_normalize_var"]) 
         tco_data_preview["s3_ms_normalize_var"] =np.where(tco_data_preview['year'] == year_start, np.nan, tco_data_preview["s3_ms_normalize_var"]) 
 
-
-        st.dataframe(tco_data_preview[['powertrain_type', 'year', 'region', 'ratio_volume', 'actual_volume', 's3_ms_normalize_var']])
-      
+        s1 = tco_data_preview[['powertrain_type', 'year', 'region', 'ratio_volume', 'actual_volume', 's3_ms_normalize_var']]
+        st.dataframe(s1)
+        
+        csv = convert_df(s1)
+        st.download_button(
+            "Press to Download",
+             csv,
+            "file.csv",
+            "text/csv",
+            key='download-csv'
+        )
+        
       with col2:
         tco_data_preview['ratio_volume'] = tco_data_preview['ratio_volume'].transform(lambda x: x * 100)
        
