@@ -1,8 +1,15 @@
 powertrain_type,region,fuel_type,base_vehicle,driveline,storage_cng,indicator_euro_impact_veh_cost,storage_capicity,storage_cost,battery_capacity,battery_cost,indicator_fuel_cell,fuel_cell_capcity,fuel_cell_cost,electronics_units,charging_point,indicator_subsidies,subsidies_rate,subsidies_year,financial_rate,residual_rate,year_amortization
-ICE-G,western europe,Gasoline,20000,6800,,True,,,,,False,,,,,False,,,2,30,5
-ICE-D,western europe,Diesel,20000,8800,,True,,,,,False,,,,,False,,,2,30,5
-CNG,western europe,CNG,20000,6800,1917.0,False,,,,,False,,,,,False,,,2,25,5
-HEV,western europe,HEV,20000,8300,,True,,,2.0,220.0,False,,,20.0,,False,,,2,30,5
-PHEV,western europe,PHEV,20000,10800,,True,,,8.0,220.0,False,,,80.0,1500.0,True,0.5,6.0,2,30,5
-BEV,western europe,,20000,7500,,False,,,55.0,220.0,False,,,80.0,1500.0,True,0.75,6.0,2,42,5
-FCEV,western europe,,20000,3500,,False,6.0,500.0,8.0,220.0,True,75.0,300.0,80.0,,True,1.0,9.0,2,40,5
+ICE-G,western europe,Gasoline,20000,6800,,TRUE,,,,,FALSE,,,,,FALSE,,,2,30,5
+ICE-D,western europe,Diesel,20000,8800,,TRUE,,,,,FALSE,,,,,FALSE,,,2,30,5
+CNG,western europe,CNG,20000,6800,1917,FALSE,,,,,FALSE,,,,,FALSE,,,2,25,5
+HEV,western europe,HEV,20000,8300,,TRUE,,,2,220,FALSE,,,20,,FALSE,,,2,30,5
+PHEV,western europe,PHEV,20000,10800,,TRUE,,,8,220,FALSE,,,80,1500,TRUE,0.5,7,2,30,5
+BEV,western europe,,20000,7500,,FALSE,,,55,220,FALSE,,,80,1500,TRUE,0.75,6,2,42,5
+FCEV,western europe,,20000,3500,,FALSE,6,500,8,220,TRUE,75,300,80,,TRUE,1,9,2,40,5
+ICE-G,china,Gasoline,20000,6800,,FALSE,,,,,FALSE,,,,,FALSE,,,2,30,5
+ICE-D,china,Diesel,20000,8800,,FALSE,,,,,FALSE,,,,,FALSE,,,2,30,5
+CNG,china,CNG,20000,6800,1917,FALSE,,,,,FALSE,,,,,FALSE,,,2,25,5
+HEV,china,HEV,20000,8300,,FALSE,,,2,220,FALSE,,,20,,FALSE,,,2,30,5
+PHEV,china,PHEV,20000,10800,,FALSE,,,8,220,FALSE,,,80,,TRUE,0.5,1,2,30,5
+BEV,china,,20000,7500,,FALSE,,,55,220,FALSE,,,80,,TRUE,1,1,2,42,5
+FCEV,china,,20000,4000,,FALSE,6,500,8,220,TRUE,75,300,80,,TRUE,1,1,2,40,5

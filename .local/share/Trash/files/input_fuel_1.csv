@@ -1,0 +1,15 @@
+﻿powertrain_type;region;fuel_type;fuel_price;fuel_consumption;indicator_euro_seven_impact_fuel;elec_cons;elec_price;hydrogen_price;hydrogen_consumption;indicator_abdule;adblue_consumption;adblue_price
+ICE-G;western europe;Gasoline;1.35;5.5;TRUE;;;;;FALSE;;
+ICE-D;western europe;Diesel;1.15;4.4;TRUE;;;;;TRUE;6;2
+CNG;western europe;CNG;0.7;7.2;FALSE;;;;;FALSE;;
+HEV;western europe;Gasoline;1.35;5;TRUE;;;;;FALSE;;
+PHEV;western europe;Gasoline;1.35;2;FALSE;10;0.15;;;FALSE;;
+BEV;western europe;;;;FALSE;15;0.15;;;FALSE;;
+FCEV;western europe;;;;FALSE;15;0.15;6;1;FALSE;;
+ICE-G;china;Gasoline;0.92;6;FALSE;;;;;FALSE;;
+ICE-D;china;Diesel;0.83;4.4;FALSE;;;;;TRUE;6;2
+CNG;china;CNG;0.7;7;FALSE;;;;;FALSE;;
+HEV;china;Gasoline;0.92;5;FALSE;;;;;FALSE;;
+PHEV;china;Gasoline;0.92;2;FALSE;10;0.086;;;FALSE;;
+BEV;china;;;;FALSE;15;0.086;;;FALSE;;
+FCEV;china;;;;FALSE;15;0.086;6;1;FALSE;;
