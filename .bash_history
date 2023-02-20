@@ -53,3 +53,6 @@ streamlit run src/main.py
 git add . 
 git commit -m "changes quartiles file"
 git push -u origin main
+git add . 
+git commit -m "changes in euro seven"
+git push -u origin main
