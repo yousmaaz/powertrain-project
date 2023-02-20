@@ -114,7 +114,7 @@ if __name__ == '__main__':
       df_ = pd.DataFrame()
       lDf = []
 
-      for i in range(input_veh_price_df.shape[0]):
+      for i in range(7):
         df = veh_price_claculation(input_veh_price.iloc[i, :].to_dict(), euro_seven, other_data, subsidies_data, year_process=year_start-2, end_year_process=year_end)
         df_ = calculate_veh_cost(input_veh_price.iloc[i, :].to_dict(), df)
         df_ = df_.loc[(df_.year >= year_start-2) & (df_.year <= year_end), :].reset_index(drop=True)
