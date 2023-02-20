@@ -33,3 +33,20 @@ streamlit run src/main.py
 streamlit src/main.py 
 streamlit run src/main.py 
 streamlit run src/main.py 
+ls -a 
+mkdir .streamlit
+cd .streamlit/
+vi config.toml
+cd.. 
+cd .. 
+ls 
+git add . 
+git commit -m "change the volume of input files"
+git push -u origin main
+git add . 
+git commit -m "add download button for the data"
+git push -u origin main
+git add . 
+git commit -m "change key on button download"
+git push -u origin main
+streamlit run src/main.py 
