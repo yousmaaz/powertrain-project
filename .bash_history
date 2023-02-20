@@ -50,3 +50,6 @@ git add .
 git commit -m "change key on button download"
 git push -u origin main
 streamlit run src/main.py 
+git add . 
+git commit -m "changes quartiles file"
+git push -u origin main
