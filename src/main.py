@@ -83,7 +83,7 @@ if __name__ == '__main__':
         lDf_bis.append(df_bis)
 
       output_fuel_cost = pd.concat(lDf_bis)
-      
+      output_fuel_cost = output_fuel_cost.loc[output_fuel_cost.region.isin(regions), :]
       
 
 
@@ -123,6 +123,8 @@ if __name__ == '__main__':
         lDf.append(df_)
 
       output_veh_cost = pd.concat(lDf)
+      output_veh_cost = output_veh_cost.loc[output_veh_cost.region.isin(regions), :]
+      
       show_data = st.expander("Show me data 👉")
       with show_data:
         st.dataframe(output_veh_cost)
@@ -147,6 +149,7 @@ if __name__ == '__main__':
     with col3:
       st.subheader("Powertrain TCO percentage by quartile/region Calculation")
       TCO = calculate_TCO(output_fuel_cost, output_veh_cost, input_rate, quartiles)
+      TCO = TCO.loc[TCO.region.isin(regions), :]
       show_data = st.expander("Show me data 👉")
       with show_data:
         st.dataframe(TCO)
@@ -179,6 +182,7 @@ if __name__ == '__main__':
       st.subheader("Mean Powertrain TCO percentage by region Calculation")
       agg_volume_powertrain_per = get_volumes_ihs(ihs)
       tco_data = get_ms_data(agg_volume_powertrain_per,output_veh_cost, TCO)
+      tco_data = tco_data.loc[TCO.region.isin(regions), :]
       show_data = st.expander("Show me data 👉")
       with show_data:
         st.dataframe(tco_data)
