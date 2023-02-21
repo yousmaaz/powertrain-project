@@ -5,15 +5,18 @@ import math
 #veh_cost = pd.read_csv('data/output/veh_cost_output.csv')
 #tco_data = pd.read_csv('data/output/TCO.csv')
 #agg_volume_powertrain_per = pd.read_csv("data/output/ihs_volume_output.csv")
-def calculate_competitveness_factor(row, factor=2): 
-    if (math.isnan(row['TCO_VAR']) == False): 
-        A = row['TCO_AVG'] - row['TCO_MIN']
-        B = row['TCO_AVG_POWERTRAIN'] - row['TCO_MIN']
-        F = row['TCO_AVG'] / factor
-        
-        return np.exp(0.5 * (A / F)**2) * np.exp(-0.5 * (B / F)**2)
-    else: 
-        return np.nan
+def calculate_competitveness_factor(row, factor=2):
+  try:
+      if (math.isnan(row['TCO_VAR']) == False): 
+          A = row['TCO_AVG'] - row['TCO_MIN']
+          B = row['TCO_AVG_POWERTRAIN'] - row['TCO_MIN']
+          F = row['TCO_AVG'] / factor
+
+          return np.exp(0.5 * (A / F)**2) * np.exp(-0.5 * (B / F)**2)
+      else: 
+          return np.nan
+  except: 
+     return np.nan
     
 def calculate_veh_cot_factor(row, factor=1.5): 
     try:
