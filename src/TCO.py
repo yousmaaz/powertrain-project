@@ -14,7 +14,7 @@ def calculate_insurance(veh_cost, insurance_rate):
 
 
 def calculate_TCO(fuel_cost, veh_cost, input_rate, quartiles):
-    veh_cost_insurance = pd.concat([calculate_insurance(veh_cost, input_rate.iloc[i, :].to_dict()) for i in range(7)])
+    veh_cost_insurance = pd.concat([calculate_insurance(veh_cost, input_rate.iloc[i, :].to_dict()) for i in range(input_rate.shape[0])])
 
     alldata = pd.merge(fuel_cost, veh_cost_insurance, on=["powertrain_type", "region", "year"])
 
