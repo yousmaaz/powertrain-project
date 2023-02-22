@@ -239,83 +239,83 @@ north america,2037,Hydrogen storage,-1
 north america,2038,Hydrogen storage,-1
 north america,2039,Hydrogen storage,0
 north america,2040,Hydrogen storage,0
-rest of asia,2021,Battery cost evolution,-4
-rest of asia,2022,Battery cost evolution,-4
-rest of asia,2023,Battery cost evolution,-4
-rest of asia,2024,Battery cost evolution,-4
-rest of asia,2025,Battery cost evolution,-4
-rest of asia,2026,Battery cost evolution,-4
-rest of asia,2027,Battery cost evolution,-4
-rest of asia,2028,Battery cost evolution,-4
-rest of asia,2029,Battery cost evolution,-4
-rest of asia,2030,Battery cost evolution,-4
-rest of asia,2031,Battery cost evolution,-4
-rest of asia,2032,Battery cost evolution,-4
-rest of asia,2033,Battery cost evolution,-4
-rest of asia,2034,Battery cost evolution,-4
-rest of asia,2035,Battery cost evolution,-4
-rest of asia,2036,Battery cost evolution,-4
-rest of asia,2037,Battery cost evolution,-4
-rest of asia,2038,Battery cost evolution,-1
-rest of asia,2039,Battery cost evolution,0
-rest of asia,2040,Battery cost evolution,0
-rest of asia,2021,Electronics,-5
-rest of asia,2022,Electronics,-5
-rest of asia,2023,Electronics,-5
-rest of asia,2024,Electronics,-5
-rest of asia,2025,Electronics,-5
-rest of asia,2026,Electronics,-5
-rest of asia,2027,Electronics,-5
-rest of asia,2028,Electronics,-5
-rest of asia,2029,Electronics,-5
-rest of asia,2030,Electronics,-5
-rest of asia,2031,Electronics,-5
-rest of asia,2032,Electronics,-5
-rest of asia,2033,Electronics,-5
-rest of asia,2034,Electronics,-5
-rest of asia,2035,Electronics,-5
-rest of asia,2036,Electronics,-5
-rest of asia,2037,Electronics,-5
-rest of asia,2038,Electronics,-5
-rest of asia,2039,Electronics,0
-rest of asia,2040,Electronics,0
-rest of asia,2021,FCEV Price evolution,-7.5
-rest of asia,2022,FCEV Price evolution,-7.5
-rest of asia,2023,FCEV Price evolution,-7.5
-rest of asia,2024,FCEV Price evolution,-7.5
-rest of asia,2025,FCEV Price evolution,-7.5
-rest of asia,2026,FCEV Price evolution,-7.5
-rest of asia,2027,FCEV Price evolution,-7.5
-rest of asia,2028,FCEV Price evolution,-7.5
-rest of asia,2029,FCEV Price evolution,-7.5
-rest of asia,2030,FCEV Price evolution,-7.5
-rest of asia,2031,FCEV Price evolution,-3
-rest of asia,2032,FCEV Price evolution,-3
-rest of asia,2033,FCEV Price evolution,-3
-rest of asia,2034,FCEV Price evolution,-3
-rest of asia,2035,FCEV Price evolution,-3
-rest of asia,2036,FCEV Price evolution,-3
-rest of asia,2037,FCEV Price evolution,-3
-rest of asia,2038,FCEV Price evolution,-3
-rest of asia,2039,FCEV Price evolution,0
-rest of asia,2040,FCEV Price evolution,0
-rest of asia,2021,Hydrogen storage,-5.5
-rest of asia,2022,Hydrogen storage,-5.5
-rest of asia,2023,Hydrogen storage,-5.5
-rest of asia,2024,Hydrogen storage,-5.5
-rest of asia,2025,Hydrogen storage,-5.5
-rest of asia,2026,Hydrogen storage,-5.5
-rest of asia,2027,Hydrogen storage,-5.5
-rest of asia,2028,Hydrogen storage,-5.5
-rest of asia,2029,Hydrogen storage,-5.5
-rest of asia,2030,Hydrogen storage,-5.5
-rest of asia,2031,Hydrogen storage,-1
-rest of asia,2032,Hydrogen storage,-1
-rest of asia,2033,Hydrogen storage,-1
-rest of asia,2034,Hydrogen storage,-1
-rest of asia,2035,Hydrogen storage,-1
-rest of asia,2036,Hydrogen storage,-1
-rest of asia,2037,Hydrogen storage,-1
-rest of asia,2038,Hydrogen storage,-1
-rest of asia,2039,Hydrogen storage,0
-rest of asia,2040,Hydrogen storage,0
+others asia,2021,Battery cost evolution,-4
+others asia,2022,Battery cost evolution,-4
+others asia,2023,Battery cost evolution,-4
+others asia,2024,Battery cost evolution,-4
+others asia,2025,Battery cost evolution,-4
+others asia,2026,Battery cost evolution,-4
+others asia,2027,Battery cost evolution,-4
+others asia,2028,Battery cost evolution,-4
+others asia,2029,Battery cost evolution,-4
+others asia,2030,Battery cost evolution,-4
+others asia,2031,Battery cost evolution,-4
+others asia,2032,Battery cost evolution,-4
+others asia,2033,Battery cost evolution,-4
+others asia,2034,Battery cost evolution,-4
+others asia,2035,Battery cost evolution,-4
+others asia,2036,Battery cost evolution,-4
+others asia,2037,Battery cost evolution,-4
+others asia,2038,Battery cost evolution,-1
+others asia,2039,Battery cost evolution,0
+others asia,2040,Battery cost evolution,0
+others asia,2021,Electronics,-5
+others asia,2022,Electronics,-5
+others asia,2023,Electronics,-5
+others asia,2024,Electronics,-5
+others asia,2025,Electronics,-5
+others asia,2026,Electronics,-5
+others asia,2027,Electronics,-5
+others asia,2028,Electronics,-5
+others asia,2029,Electronics,-5
+others asia,2030,Electronics,-5
+others asia,2031,Electronics,-5
+others asia,2032,Electronics,-5
+others asia,2033,Electronics,-5
+others asia,2034,Electronics,-5
+others asia,2035,Electronics,-5
+others asia,2036,Electronics,-5
+others asia,2037,Electronics,-5
+others asia,2038,Electronics,-5
+others asia,2039,Electronics,0
+others asia,2040,Electronics,0
+others asia,2021,FCEV Price evolution,-7.5
+others asia,2022,FCEV Price evolution,-7.5
+others asia,2023,FCEV Price evolution,-7.5
+others asia,2024,FCEV Price evolution,-7.5
+others asia,2025,FCEV Price evolution,-7.5
+others asia,2026,FCEV Price evolution,-7.5
+others asia,2027,FCEV Price evolution,-7.5
+others asia,2028,FCEV Price evolution,-7.5
+others asia,2029,FCEV Price evolution,-7.5
+others asia,2030,FCEV Price evolution,-7.5
+others asia,2031,FCEV Price evolution,-3
+others asia,2032,FCEV Price evolution,-3
+others asia,2033,FCEV Price evolution,-3
+others asia,2034,FCEV Price evolution,-3
+others asia,2035,FCEV Price evolution,-3
+others asia,2036,FCEV Price evolution,-3
+others asia,2037,FCEV Price evolution,-3
+others asia,2038,FCEV Price evolution,-3
+others asia,2039,FCEV Price evolution,0
+others asia,2040,FCEV Price evolution,0
+others asia,2021,Hydrogen storage,-5.5
+others asia,2022,Hydrogen storage,-5.5
+others asia,2023,Hydrogen storage,-5.5
+others asia,2024,Hydrogen storage,-5.5
+others asia,2025,Hydrogen storage,-5.5
+others asia,2026,Hydrogen storage,-5.5
+others asia,2027,Hydrogen storage,-5.5
+others asia,2028,Hydrogen storage,-5.5
+others asia,2029,Hydrogen storage,-5.5
+others asia,2030,Hydrogen storage,-5.5
+others asia,2031,Hydrogen storage,-1
+others asia,2032,Hydrogen storage,-1
+others asia,2033,Hydrogen storage,-1
+others asia,2034,Hydrogen storage,-1
+others asia,2035,Hydrogen storage,-1
+others asia,2036,Hydrogen storage,-1
+others asia,2037,Hydrogen storage,-1
+others asia,2038,Hydrogen storage,-1
+others asia,2039,Hydrogen storage,0
+others asia,2040,Hydrogen storage,0
